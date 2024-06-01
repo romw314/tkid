@@ -1,0 +1,1 @@
+var u='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()[]{};:\'"\\|,<.>/?',t=function(_){return !_?t({_:''}):_._.length===20?_._:_._===undefined?t({_:''}):t({_:_._+u[crypto.getRandomValues(new Uint32Array(1))[0]%u.length]});};typeof module==='object'?module.exports=t:window.tk=t;
